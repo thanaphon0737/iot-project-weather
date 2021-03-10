@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const server = require('http').Server(app);
-const ip = '192.168.1.22';
+const ip = '206.189.158.45';
 const port = 7777
 const io = require('socket.io')(server, {
     cors: {
