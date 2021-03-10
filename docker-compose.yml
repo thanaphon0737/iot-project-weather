@@ -12,7 +12,7 @@ services:
       IP_FRONTEND: frontend
   frontend:
     build:
-      context: ./iotproject
+      context: ./frontend
       dockerfile: ./Dockerfile
     image: "0838/iot-frontend"
     ports:
