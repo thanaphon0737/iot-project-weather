@@ -7,7 +7,7 @@ const ip = '206.189.158.45';
 const port = 7777
 const io = require('socket.io')(server, {
     cors: {
-        origin: `http://${ip}:8080`,
+        origin: `http://${ip}`,
         methods: ["GET", "POST"]
     }
 });

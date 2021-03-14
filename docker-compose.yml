@@ -8,16 +8,3 @@ services:
     image: "0838/iot-backend"
     ports:
       - "7777:7777"
-    environment: 
-      IP_FRONTEND: frontend
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: ./Dockerfile
-    image: "0838/iot-frontend"
-    ports:
-      - "80:80"
-    environment: 
-      IP_BACKEND: backend
-    links:
-      - "backend"
